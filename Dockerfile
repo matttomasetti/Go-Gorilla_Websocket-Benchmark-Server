@@ -23,10 +23,10 @@ RUN cd /home/websocket \
     && mv go /usr/local \
     && echo "export GOPATH=/home/websocket" >> ~/.profile \
     && echo "export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin" >> ~/.profile \
-    && source ~/.profile
+    && source ~/.profile \
 
 # Build project
-RUN go get github.com/gorilla/websocket \
+    && go get github.com/gorilla/websocket \
     && go build go-gorilla_websocket-benchmark-server.go
 
     

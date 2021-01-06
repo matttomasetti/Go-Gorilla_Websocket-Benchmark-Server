@@ -15,7 +15,6 @@ docker run -p 8080:8080 mtomasetti/go-gorilla_websocket-benchmark-server
 ```
 That's it! The websocket server will automatically start on **port 8080**
 
-
 ## Dockerfile Set-Up
 ```
 docker build . -t websocket_benchmark/go
